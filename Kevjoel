@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kevjoel | Ropa de Hombre</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    body {
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #111;
+      color: #fff;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 28px;
+    }
+
+    nav a {
+      color: #fff;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1512436991641-6745cdb1723f') no-repeat center center/cover;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+    }
+
+    .hero h2 {
+      font-size: 48px;
+    }
+
+    .productos {
+      padding: 40px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .producto {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+      text-align: center;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .producto img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .producto h3 {
+      margin: 10px 0;
+    }
+
+    .producto p {
+      color: #777;
+    }
+
+    .producto button {
+      background-color: #111;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .about, .contacto {
+      padding: 40px;
+      background-color: #fff;
+    }
+
+    footer {
+      background-color: #111;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Kevjoel</h1>
+    <nav>
+      <a href="#productos">Productos</a>
+      <a href="#about">Sobre Nosotros</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Estilo Masculino, Elegancia Total</h2>
+  </section>
+
+  <section class="productos" id="productos">
+    <div class="producto">
+      <img src="https://images.unsplash.com/photo-1520975916090-3105956bba45" alt="Camisa casual">
+      <h3>Camisa Casual</h3>
+      <p>$29.99</p>
+      <button>Comprar</button>
+    </div>
+    <div class="producto">
+      <img src="https://images.unsplash.com/photo-1602810310596-1f0ecb751d9a" alt="Chaqueta de cuero">
+      <h3>Chaqueta de Cuero</h3>
+      <p>$89.99</p>
+      <button>Comprar</button>
+    </div>
+    <div class="producto">
+      <img src="https://images.unsplash.com/photo-1618354691328-f5fefda932c2" alt="Pantalón elegante">
+      <h3>Pantalón Elegante</h3>
+      <p>$49.99</p>
+      <button>Comprar</button>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <h2>Sobre Kevjoel</h2>
+    <p>En Kevjoel, creemos que la ropa de hombre debe ser cómoda, moderna y expresar tu autenticidad. Nos dedicamos a ofrecer piezas de alta calidad y diseño único para que te sientas seguro y elegante cada día.</p>
+  </section>
+
+  <section class="contacto" id="contacto">
+    <h2>Contacto</h2>
+    <p>¿Tienes dudas o quieres hacer un pedido personalizado? Escríbenos:</p>
+    <form>
+      <input type="text" placeholder="Tu nombre" required><br><br>
+      <input type="email" placeholder="Tu correo" required><br><br>
+      <textarea placeholder="Mensaje" rows="5"></textarea><br><br>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Kevjoel - Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
